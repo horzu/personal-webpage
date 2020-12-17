@@ -1,0 +1,47 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    margin: 0 auto;
+    max-width: 900px;
+}
+
+nav {
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    height: 60px;
+}
+
+nav h1 {
+    display: inline-block;
+    font-weight: 900;
+    font-size: 1.5rem;
+    margin: auto 0;
+}
+
+nav ul {
+    display: inline-block;
+    font-size: 1.2rem;
+    margin: auto 0;
+}
+
+nav li {
+    display: inline;
+    padding-right: 5px;
+}
+
+nav a {
+    color: black;
+    text-decoration: underline;
+}
+
+main {
+    display: flex;
+    margin-top: 5%;
+}
+
+main img {
+    max-width: 35%;
+    border-radius: 5%;
+    margin: auto 0;
+}
