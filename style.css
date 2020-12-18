@@ -5,6 +5,17 @@ body {
     max-width: 900px;
 }
 
+h1 {
+    font-weight: 900;
+    font-size: 2rem;   
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
 nav {
     display: flex;
     background-color: white;
@@ -14,8 +25,6 @@ nav {
 
 nav h1 {
     display: inline-block;
-    font-weight: 900;
-    font-size: 1.5rem;
     margin: auto 0;
 }
 
@@ -32,16 +41,74 @@ nav li {
 
 nav a {
     color: black;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 main {
-    display: flex;
+    display: block;
     margin-top: 5%;
 }
 
-main img {
+#about-me {
+    display: flex;
+}
+
+#about-me h2 {
+    margin-bottom: 2rem;
+}
+
+#about-me img {
     max-width: 35%;
     border-radius: 5%;
     margin: auto 0;
+}
+
+#projects {
+    margin-top: 5%;
+}
+
+details {
+    cursor: pointer;
+    display: block;
+}
+
+summary {
+    list-style-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/right-arrow.svg);
+    margin: 1rem 0;
+}
+
+.project-title h3 {
+    display: inline;
+}
+
+.project-image {
+    width: 50%;
+    
+}
+
+.link a {
+    text-decoration: underline;
+}
+
+/*Skills Section*/
+
+#skills {
+    margin-top: 5%;
+}
+
+#skills-container {
+    display: flex;
+    justify-content: space-between;
+    font-size: 3rem;
+}
+
+
+footer {
+    display: block;
+    text-align: center;
+    margin-top: 10%;
+}
+
+.heart {
+    color: red;
 }

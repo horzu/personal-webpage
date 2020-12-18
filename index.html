@@ -6,7 +6,8 @@
     <title>Mert Şakar's Personal Website</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="./resources/webfonts/all.min.css">
+    
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -15,40 +16,92 @@
 
         <ul>
             <li><a href="#about-me">About Me</a></li>
-            <li><a href="projects">Projects</a></li>
-            <li><a href="skills">Skills</a></li>
-            <li><a href="contact">Contact</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
 
     </nav>
 
     <main>
-        <div id="about-me">
-            <h2>About Me</h2>
-            <p>Hi! I am Mert! I am an Industrial Engineer and I have a M.Sc. in International Trade and Finance. 
-            I have nearly 5 years of experience as Industrial Engineer (mostly planning and logistics) in automotive and fastening technologies sectors.
-            <br>
-            <br>
-            Since the beginning of my childhood computers were the most interesting thing for me. I can still remember the exact feeling when I have my first atari and my computer!
-            And I spent most of my childhood with playing those two. 
-            <br>
-            <br>
-            I think commanding a non-living thing whether for fun or for a task is amazing. I love doing hard or repetetive boring tasks with programs. 
-            With just a little bit adjustment, computers can solve our problems and do all the boring stuff for us. And also they can entertain us with games, videos and billion other stuff. 
-            I think computers are the real angels god has given us :) That's briefly why I love them so much.
-            <br>
-            <br>
-            I have become an Industrial Engineer because I love doing things more efficiently and doing a task in a shorter time. 
-            But, as I said computers are also a passion for me. So, I want to learn computer science and be a developer. 
-            <br>
-            <br>
-            This webpage actually is the first step for me at my journey. It has been a while and I have learned a little in web development.
-            I hope this site will grow larger with my projects and articles.
-            </p>
-        </div>
+        <section id="about-me">
+            <div id="aboutme-text">
+                <h2>About Me</h2>
+                <p>Hi! I am Mert! I am an Industrial Engineer and I have a M.Sc. in International Trade and Finance. 
+                I have nearly 5 years of experience as Industrial Engineer (mostly planning and logistics) in automotive and fastening technologies sectors.
+                <br>
+                <br>
+                Since the beginning of my childhood computers were the most interesting thing for me. I can still remember the exact feeling when I have my first atari and my computer!
+                And I spent most of my childhood with playing those two. 
+                <br>
+                <br>
+                I think commanding a non-living thing whether for fun or for a task is amazing. I love doing hard or repetetive boring tasks with programs. 
+                With just a little bit adjustment, computers can solve our problems and do all the boring stuff for us. And also they can entertain us with games, videos and billion other stuff. 
+                I think computers are the real angels god has given us :) That's briefly why I love them so much.
+                <br>
+                <br>
+                I have become an Industrial Engineer because I love doing things more efficiently and doing a task in a shorter time. 
+                But, as I said computers are also a passion for me. So, I want to learn computer science and be a developer. 
+                <br>
+                <br>
+                This webpage actually is the first step for me at my journey. It has been a while and I have learned a little in web development.
+                I hope this site will grow larger with my projects and articles.
+                </p>
+            </div>
+            <img src="./resources/self.png" alt="A Photo of Mert Şakar">
+        </section>
 
-        <img src="./resources/self.png" alt="A Photo of Mert Şakar">
+        
 
+        <section id="projects">
+            <h2>Projects</h2>
+            <details class="project">
+                <summary class="project-title">
+                    <h3>Kanban Project</h3>
+                </summary>
+                <img src="./resources/kanban-kart.jpg" class="project-image" alt="Photo of a random Kanban card">
+                <p class="project-description">
+                    Kanban system for warehouse and welding lines
+                </p>
+            </details>
+            <details class="project">
+                <summary class="project-title">
+                    <h3>Tiny ERP</h3>
+                </summary>
+                <img src="./resources/tiny-erp.jpg" class="project-image" alt="A screenshot from the Excel sheet">
+                <p class="project-description">
+                    An Excel sheet with macros that summarizes all customer orders in weekly basis and back orders, material requirements, stocks, shipped quantities, forecasts from previous month and previous year. It also displays plant's material code and definition according to customer material code.
+                </p>
+            </details>
+            <details class="project">
+                <summary class="project-title">
+                    <h3>Number Guesser</h3>
+                </summary>
+                <img src="./resources/number-guesser.JPG" class="project-image">
+                <p class="project-description">
+                    A number guessing game you can play against computer. Guided by Codecademy lesson. <span class="link"><a href="https://horzu.github.io/Number-Guesser/" target="_blank">Click here to play!</a></span>
+                </p>
+            </details>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <div id="skills-container">
+                <i class="fab fa-html5"></i>
+                <i class="fab fa-css3-alt"></i>
+                <i class="fab fa-js"></i>
+                <i class="fab fa-git"></i>
+                <i class="fas fa-terminal"></i>
+                <i class="fab fa-node"></i>
+                <i class="fab fa-github"></i>
+            </div>
+        </section>
+
+        <footer>
+            Made with <span class="heart">♥</span> in Smyrna
+        </footer>
     </main>
+
+    
 </body>
 </html>
