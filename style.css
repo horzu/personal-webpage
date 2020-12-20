@@ -122,6 +122,18 @@ summary {
     font-size: 3rem;
 }
 
+#contact-icon {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    font-size: 3rem;
+    margin-top: 2rem;
+}
+
+#contact-icon i {
+    margin-right: 2rem;
+}
+
 
 footer {
     display: block;
