@@ -151,6 +151,8 @@ summary {
 
 #contact-icon i {
     margin-right: 2rem;
+    background-color: var(--bg-color);
+    color: var(--font-color);
 }
 
 
