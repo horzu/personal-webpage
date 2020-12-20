@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mert Şakar's Personal Website</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./resources/webfonts/all.min.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <h1>Mert Şakar</h1>
+        
+        <div class="theme-switch-wrapper"><i class="fas fa-moon"></i>             
+            <label class="theme-switch" for="checkbox">
+                <input type="checkbox" id="checkbox" />
+                <div class="slider round"></div>
+          </label>
+        </div>
+
+        <ul>
+            <li><a href="https://horzu.github.io/">Home</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        
+
+    </nav>
+
+    <main>
+        <section>
+            <h2>Credit Card Checker</h2>
+            <label for="cardNo">Please enter credit card number to check validity:</label>
+            <input type="text" name="cardNo" id="cardNo" placeholder="Enter card number here">
+            <button type="submit" onclick="check()">Check</button>
+
+            <p id="result"></p>
+        </section>
+    </main>
+
+    <script src="card-checker.js"></script>
+    
+
+</body>

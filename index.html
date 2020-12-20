@@ -55,7 +55,8 @@
                 I hope this site will grow larger with my projects and articles.
                 </p>
             </div>
-            <img src="./resources/self.png" alt="A Photo of Mert Şakar">
+            <img id="selfphoto" onclick="changeBorder()" src="./resources/self.png" alt="A Photo of Mert Şakar">
+            
         </section>
 
         
@@ -82,6 +83,15 @@
             </details>
             <details class="project">
                 <summary class="project-title">
+                    <h3>Credit Card Checker</h3>
+                </summary>
+                <img src="./resources/number-guesser.JPG" class="project-image">
+                <p class="project-description">
+                    A webpage to check the validity of an entered credit card number. <span class="link"><a href="./credit-card-checker.html" target="_blank">Click here to check!</a></span>
+                </p>
+            </details>
+            <details class="project">
+                <summary class="project-title">
                     <h3>Number Guesser</h3>
                 </summary>
                 <img src="./resources/number-guesser.JPG" class="project-image">
@@ -98,7 +108,6 @@
                 <i class="fab fa-css3-alt"></i>
                 <i class="fab fa-js"></i>
                 <i class="fab fa-git"></i>
-                
                 <i class="fas fa-terminal"></i>
                 <i class="fab fa-node"></i>
                 <i class="fab fa-github"></i>
@@ -111,6 +120,16 @@
     </main>
     
     <script src="script.js"></script>
+    <script>
+        let photoimg = document.getElementById("selfphoto");
+        function changeBorder  () {
+        if (photoimg.style.borderRadius === "5%") {
+            photoimg.style.borderRadius = "50%"
+        } else {
+            photoimg.style.borderRadius = "5%"
+        }
+        };
+    </script>
     
 </body>
 </html>
