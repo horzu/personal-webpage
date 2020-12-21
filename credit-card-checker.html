@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mert Şakar's Personal Website</title>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="./resources/css/style.css">
     <link rel="stylesheet" href="./resources/webfonts/all.min.css">
     
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -22,7 +22,7 @@
         </div>
 
         <ul>
-            <li><a href="https://horzu.github.io/">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
 
@@ -31,8 +31,21 @@
     </nav>
 
     <main>
-        <section>
+        <section id="credit-card-checker">
             <h2>Credit Card Checker</h2>
+            <p>To find out if a credit card number is valid or not, the Luhn algorithm is used. 
+                <br>Generally speaking, an algorithm is a series of steps that solve a problem — the Luhn algorithm is a series of mathematical calculations used to validate certain identification numbers, e.g. credit card numbers. 
+                <br>The calculations in the Luhn algorithm can be broken down as the following steps:
+                
+                </p><ol>
+                    <li>Starting from the farthest digit to the right, AKA the check digit, iterate to the left.</li>
+                    <li>As you iterate to the left, every other digit is doubled (the check digit is not doubled). If the number is greater than 9 after doubling, subtract 9 from its value.</li>
+                    <li>Sum up all the digits in the credit card number.</li>
+                    <li>If the sum modulo 10 is 0 (if the sum divided by 10 has a remainder of 0) then the number is valid, otherwise, it’s invalid.</li>
+                    
+                </ol>
+                Here’s a <a href="https://content.codecademy.com/PRO/independent-practice-projects/credit-card-checker/diagrams/cc%20validator%20diagram%201.svg" target="_blank" id="steps">visual that outlines the steps</a>. Check your function using both the provided valid and invalid numbers.
+            <p></p>
             <label for="cardNo">Please enter credit card number to check validity:</label>
             <input type="text" name="cardNo" id="cardNo" placeholder="Enter card number here">
             <button type="submit" onclick="check()">Check</button>
@@ -41,7 +54,8 @@
         </section>
     </main>
 
-    <script src="card-checker.js"></script>
+    <script src="./resources/script/script.js"></script>
+    <script src="./resources/script/card-checker.js"></script>
     
 
 </body>
