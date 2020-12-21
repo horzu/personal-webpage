@@ -19,16 +19,6 @@ body {
     color: var(--font-color);
 }
 
-h1 {
-    font-weight: 900;
-    font-size: 2rem;   
-}
-
-h2 {
-    font-weight: 700;
-    font-size: 1.5rem;
-    margin-bottom: 2rem;
-}
 
 /* Navigation bar */
 
@@ -54,7 +44,7 @@ nav ul {
 
 nav li {
     display: inline;
-    padding-right: 1rem;
+    padding-left: 1rem;
     
     
 }
@@ -63,6 +53,17 @@ nav a {
     color: var(--font-color);
     text-decoration: none;
     
+}
+
+h1 {
+    font-weight: 900;
+    font-size: 2rem;   
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
 }
 
 
@@ -165,6 +166,8 @@ margin-top: 10%;
 .heart {
 color: red;
 }
+
+/* Dark Mode */
 
 .theme-switch-wrapper {
 display: flex;
