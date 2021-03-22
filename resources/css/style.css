@@ -81,9 +81,14 @@ main {
     margin-top: 100px;
 }
 
-#about-me {
+#welcome-section {
     display: flex;
+    align-items: center;
+    height: 100vh;
 }
+
+
+
 
 @media (max-width: 600px) {
     body {
@@ -108,11 +113,11 @@ main {
     }
 }
 
-#about-me h2 {
+#welcome-section h2 {
     margin-bottom: 2rem;
 }
 
-#about-me img {
+#welcome-section img {
     width: 20rem;
     border-radius: 5%;
     margin: auto 0;

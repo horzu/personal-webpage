@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav>
+    <nav id="navbar">
         <h1>Mert Şakar</h1>
         
         <div class="theme-switch-wrapper"><i class="fas fa-moon"></i>             
@@ -22,7 +22,7 @@
         </div>
 
         <ul>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="#welcome-section">Home</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
 
@@ -31,9 +31,9 @@
     </nav>
 
     <main>
-        <section id="about-me">
+        <section id="welcome-section">
             <div id="aboutme-text">
-                <h2>About Me</h2>
+                <h1>About Me</h1>
                 <p>Hi! I am Mert! I am an Industrial Engineer and I have a M.Sc. in International Trade and Finance. 
                 I have nearly 5 years of experience as Industrial Engineer (mostly planning and logistics) in automotive and fastening technologies sectors.
                 <br>
@@ -63,7 +63,7 @@
 
         <section id="projects">
             <h2>Projects</h2>
-            <details class="project">
+            <details class="project-tile">
                 <summary class="project-title">
                     <h3>Kanban Project</h3>
                 </summary>
@@ -72,7 +72,7 @@
                     Kanban system for warehouse and welding lines
                 </p>
             </details>
-            <details class="project">
+            <details class="project-tile">
                 <summary class="project-title">
                     <h3>Tiny ERP</h3>
                 </summary>
@@ -81,7 +81,7 @@
                     An Excel sheet with macros that summarizes all customer orders in weekly basis and back orders, material requirements, stocks, shipped quantities, forecasts from previous month and previous year. It also displays plant's material code and definition according to customer material code.
                 </p>
             </details>
-            <details class="project">
+            <details class="project-tile">
                 <summary class="project-title">
                     <h3>Credit Card Checker</h3>
                 </summary>
@@ -90,7 +90,7 @@
                     A webpage to check the validity of an entered credit card number. <span class="link"><a href="./credit-card-checker.html" target="_blank">Click here to check!</a></span>
                 </p>
             </details>
-            <details class="project">
+            <details class="project-tile">
                 <summary class="project-title">
                     <h3>Number Guesser</h3>
                 </summary>
@@ -110,7 +110,7 @@
                 <i class="fab fa-git"></i>
                 <i class="fas fa-terminal"></i>
                 <i class="fab fa-node"></i>
-                <i class="fab fa-github"></i>
+                <a href="https://github.com/horzu" target="_blank" id="profile-link"><i class="fab fa-github" ></i></a>
             </div>
         </section>
 
@@ -130,6 +130,7 @@
         }
         };
     </script>
-    
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 </html>
